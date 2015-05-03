@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science Hack Day 50</title>
+<style>
+body {
+    background-color: #d4ebdf;
+    color: #232323;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+@media all and (min-width: 32em) {
+    body {
+        line-height: 1.75;
+    }
+}
+img {
+    border: none;
+    max-width: 100%;
+}
+header,
+picture,
+figure,
+figcaption,
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+figure img {
+    display: block;
+}
+figcaption {
+    color: #d4ebdf;
+    background-color: #232323;
+}
+@media all and (min-width: 48em) {
+    figure {
+        position: relative;
+    }
+    figcaption {
+        background-color: transparent;
+        color: rgba(255,255,255,0.8);
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+small {
+    font-size: 75%;
+}
+br {
+    clear: both;
+}
+blockquote::before {
+    content: '“';
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: #666;
+    display: inline-block;
+    float: left;
+    font-size: 5em;
+    line-height: 0.9;
+    margin-left: -0.5em;
+}
+
+[role="banner"] img {
+    background-color: #fff;
+}
+.container {
+    max-width: 62.5em;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #232323;
+}
+.credit {
+    display: block;
+    text-align: right;
+    padding: 0 1em;
+}
+.bleed {
+    background-color: #d4ebdf;
+}
+.spread {
+    width: 100%;
+}
+.prose {
+    box-sizing: border-box;
+    padding: 1em 5%;
+}
+@media all and (min-width: 32em) {
+    .prose {
+        font-size: 1.125em;
+    }
+}
+@media all and (min-width: 40em) {
+    .prose {
+        font-size: 1.1875em;
+    }
+}
+@media all and (min-width: 48em) {
+    .prose {
+        font-size: 1.25em;
+    }
+}
+@media all and (min-width: 56em) {
+    .prose {
+        font-size: 1.3125em;
+    }
+}
+@media all and (min-width: 64em) {
+    .prose {
+        font-size: 1.375em;
+    }
+}
+.heading {
+    display: inline-block;
+    padding: 0.25em 0.5em 0.325em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    line-height: 1.25;
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.8);
+}
+.heading-illustrated {
+    shape-outside: polygon(0 0, 100% 0, 100% 60%, 50% 60%, 30% 100%, 0 100%);
+    float: left;
+}
+
+.blurb{
+    width: 75%;
+}
+.blurb:nth-child(odd) {
+    float: left;
+}
+.blurb:nth-child(even) {
+    float: right;
+    text-align: right;
+}
+@media all and (min-width: 56em) {
+    .blurb {
+        width: 40%;
+    }
+}
+
+.split {
+    width: 50%;
+    float: right;
+}
+.split + .split {
+    float: left;
+}
+.trio img {
+    display: block;
+    margin: 0 auto;
+}
+@media all and (min-width: 48em) {
+    .group {
+        overflow: hidden;
+        clear: both;
+    }
+    .trio {
+        width: 33.3333%;
+        float: left;
+    }
+    .group {
+        display: -webkit-flex;
+        display: flex;
+    }
+}
+</style>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+</head>
+<body>
+
+<header role="banner">
+<h1>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_titlepage-large.png">
+<img class="spread" src="img/shd_titlepage-small.png" alt="Science Hack Day 50" srcset="img/shd_titlepage-large.png 2x">
+</picture>
+</h1>
+
+</header><!-- /@banner -->
+
+<main>
+<div class="container">
+
+<header class="bleed">
+<h2>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_descriptionpage-large.png">
+<img class="spread" src="img/shd_descriptionpage-small.png" alt="Science Hack Day: 50 events, 30 cities, 19 countries" srcset="img/shd_descriptionpage-large.png 2x">
+</picture>
+</h2>
+
+<figure>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/getexcited_sharplight-large.jpg">
+<img class="spread" src="img/getexcited_sharplight-small.jpg" alt="" srcset="img/getexcited_sharplight-large.jpg 2x">
+</picture>
+<figcaption><small class="credit">Yasaman Sheri with the “Jello Electrophoresis” hack at Science Hack Day SF 2012, photo by Matt Biddulph</small></figcaption>
+</figure>
+
+</header><!-- /.bleed -->
+
+<section>
+
+<header>
+<h3>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_what-large.png">
+<img class="heading-illustrated" src="img/shd_what-small.png" alt="What?" srcset="img/shd_what-large.png 2x">
+</picture>
+</h3>
+</header>
+
+<div class="prose">
+
+<p>Science Hack Day is a two-day-all-night event where anyone excited about making weird, silly or serious things with science comes together in the same physical space to see what they can prototype within 24 consecutive hours. The mission of Science Hack Day is to get excited and make things with science. Designers, developers, scientists and anyone excited about making things with science are welcome to attend – no experience in science or hacking is necessary, just an insatiable curiosity. The event is entirely free to attend, organized by volunteers, and supported via sponsors.</p>
+
+<p>People organically form multidisciplinary teams over the course of a weekend: particle physicists team up with designers, marketers join forces with rocket scientists, writers collaborate with molecular biologists, and developers partner with school kids. Science Hack Day is inherently about mashing up ideas, mediums, industries and people to create sparks for future ideas, collaborations and inspirations to launch from. To date, there have been 50 Science Hack Day events around the globe and dozens more are being planned. Anyone can create a Science Hack Day in their city – there’s an open set of guidelines for how to get started at <a href="http://sciencehackday.org/howto">http://sciencehackday.org/howto</a>.</p>
+
+</div><!-- /.prose -->
+
+<small class="credit">Kate Harrington with the “3D Printed Universe” hack at Science Hack Day SF 2014, photo by Matt Biddulph</small>
+
+</section>
+
+<article>
+
+<div class="prose">
+
+<h3 class="heading">Letter from Ariel</h3>
+
+<p>The relationship most people have with scientific exploration is one of observation: watching others explore on behalf of us, but not actually exploring it ourselves. For the last five years, an international grassroots network of people has been challenging this status quo with <a href="http://sciencehackday.org/">Science Hack Day</a>: bringing together scientists, designers, developers and enthusiastic people from all backgrounds to get excited and make things with science. Today, thousands of people, hailing from 50 events in 19 countries around the world, have demonstrated that playing with science is the most empowering form of science engagement, whether or not you have a scientific background.</p>
+
+<p>Organized by volunteers and supported by its gracious sponsors, Science Hack Day is entirely free to attend. By design, Science Hack Day is not an organization. It is what every attendee makes of it. It’s not a franchise; you do not need permission to organize your own. There is an open <a href="http://sciencehackday.org/howto">How-To Guide</a> to help anyone wanting to create the event in their city. Everybody gets to own Science Hack Day collectively.</p>
+
+<p>For some people the event has been obviously lifechanging, inspiring career changes or sparking multi-year research endeavors. For many others, the impact is subtle yet powerful: the realization that they—as they exist right now with their unique experience, skillset and way of looking at the world—can actively contribute to science in meaningful ways. This includes scientists playing in areas different than their own and realizing how unusual collaborations can enhance their work, career or general approach to science.</p>
+
+<p>The science industry suffers immeasurably from not recognizing the potential of actively working with people from completely different disciplines. With a fresh set of eyes from those who solve problems across a wide range of industries, new concepts emerge and go on to influence scientific processes, communication and discoveries in unexpected ways. Ivory towers can absolutely get by in continuing to stay tunnel-focused, but the forfeiture of countless clever approaches made by maintaining such a narrow path is reckless.</p>
+
+<p>Building on what <a href="https://adactio.com/">Jeremy Keith</a> started with Science Hack Day London in 2010, I organized my first Science Hack Day that same year. Late at night, with the event in full swing around me, I whispered smilingly to my sleep-deprived self, “this is the best thing I’ve ever done”. Surrounded by so many smiles and so much enthusiasm, I witnessed a collective thrill for experimentation. It was an overwhelming high. At Science Hack Day, you’ll see countless clever solutions and playful experiments created over the courseof a weekend. Its true achievement, however, is to elevate people and create impacts that last over lifetimes. I started leading the global effort for Science Hack Day because I believe in galvanizing the awesomeness within each individual – and building a world that harnesses their existing interests, skills, and backgrounds to create serendipitous and unexpected scientific discoveries.</p>
+
+<p>I’m often asked what the best creation to come out of Science Hack Day has been and my enduring answer is: the people.</p>
+
+<p>In gratitude to all the science hackers who have made these 50 events possible,</p>
+
+<footer class="credit"><a href="http://arielwaldman.com/">Ariel Waldman</a><br>
+Global Director, Science Hack Day</footer>
+
+</div><!-- /.prose -->
+
+</article>
+
+<picture class="bleed">
+<source media="all and (min-width: 32em)" srcset="img/map-large.png">
+<img class="spread" src="img/map-small.png" alt="Map of Science Hack Day locations in Europe, Asia, North America, South America, and Africa" srcset="img/map-large.png 2x">
+</picture><!-- /.bleed -->
+
+<section>
+
+<div class="prose">
+
+<h3>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_ambassadors-large.png">
+<img src="img/shd_ambassadors-small.png" alt="Ambassadors" srcset="img/shd_ambassadors-large.png 2x">
+</picture>
+</h3>
+
+<p>The Science Hack Day Ambassador Program is an initiative to encourage the creation of Science Hack Days in cities around the world. 16 people from around the world who were interested in organizing a Science Hack Day in their city were selected to win a scholarship for a trip to Science Hack Day San Francisco. The ambassadors experienced first-hand how Science Hack Day works and connected with a global community of organizers. Building on the Ambassador Program’s successful format, a Scientist Engagement Program was also created to further diversify the areas of science represented at Science Hack Day events.</p>
+
+</div><!-- /.prose -->
+
+<figure>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/ambassadors_overlay-large.jpg">
+<img class="spread" src="img/ambassadors_overlay-small.jpg" alt="JJ, Mexico; Igor, Germany; Ariel, global; Fabius, Brazil; David, Ireland; Carolina, South Afria; Morris, Kenya; Brian, Iceland; Amber, Canada; Satoka, Japan; Stuart, USA" srcset="img/ambassadors_overlay-large.jpg 2x">
+</picture>
+<figcaption><small class="credit">Science Hack Day Ambassadors at Science Hack Day SF 2011, photo by Matt Biddulph</small></figcaption>
+</figure>
+
+</section>
+
+<section>
+
+<h3 class="split">
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_origin-large.png">
+<img src="img/shd_origin-small.png" alt="Origin" srcset="img/shd_orign-large.png 2x">
+</picture>
+</h3><!-- /.split -->
+
+<div class="prose">
+
+<p>In 2010, <a href="http://arielwaldman.com/">Ariel Waldman</a> was frustrated that there was a lot of science data being made open, but that no one was doing anything interesting with it. She put together a panel at SXSW that year to share her frustration with others. <a href="https://adactio.com/">Jeremy Keith</a> was sitting in the audience and became so inspired by this problem that he organized the first Science Hack Day later that year in London at The Guardian. Encouraged by what Jeremy had started, Ariel took the torch to make Science Hack Day a global phenomenon.</p>
+
+<p>She re-created the event in San Francisco, and published open source instructions that anyone could adopt. Ariel continues to instigate events across the globe, supporting people in creating a Science Hack Day in their own city. The torch is now carried by the dozens of organizers of Science Hack Day worldwide who have made it what it is today.</p>
+
+</div><!-- /.prose -->
+
+</section>
+
+<section>
+
+<h3>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_sponsorship-large.png">
+<img src="img/shd_sponsorship-small.png" alt="Global Support" srcset="img/shd_sponsorship-large.png 2x">
+</picture>
+</h3>
+
+
+<p class="split prose bleed">Science Hack Day launched its global initiative and Ambassador Program in 2011 with a grant from the Alfred P. Sloan Foundation.</p>
+<img class="split prose" src="img/APS_logo.png" alt="">
+<br>
+
+<p class="split prose bleed">Further development and efforts of the global initiative have been supported since 2013 through grants from the Gordon and Betty Moore Foundation.</p>
+<img class="split prose" src="img/moore_logo.png" alt="">
+<br>
+
+
+<p class="split prose bleed">In 2014, Science Hack Day announced its first global sponsor, Thomson Reuters EndNote. The collaboration provides sponsorship funds to Science Hack Day events around the world.</p>
+<img class="split prose" src="img/tr_logo.png" alt="">
+<br>
+
+
+</section>
+
+
+<section>
+
+<h3>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_hacks-large.png">
+<img src="img/shd_hacks-small.png" alt="Hacks" srcset="img/shd_hacks-large.png 2x">
+</picture>
+</h3>
+
+<div class="group">
+
+<div class="prose trio">
+<img src="img/syneseizure.jpg" alt="">
+<h4 class="heading">Syneseizure</h4>
+<p>A mask that simulates synesthesia. As the wearer navigates light or dark areas of a room, different sides of the mask begin vibrating. In this way, the wearer can begin to feel sight. After this hack was created, an individual reached out to the team for help. He was looking to build a sound/haptic body suit to help train a toddler, who had experienced severe brain damage, to crawl. The hack had inspired him to create a “more useful” enhancement that helped with accuracy.</p>
+</div><!-- /.prose.trio -->
+
+<div class="prose trio">
+<img src="img/planetarium.jpg" alt="">
+<h4 class="heading">Interactive Planetarium</h4>
+<p>A whole-body interactive sky chart made using Kinect. People can point to different celestial objects to get more information about them while also getting a physical sense of the distance between them. After this hack was created, it went on to be an exhibit at the American Museum of Natural History in NYC, where it was a big hit with families and children. It then was exhibited at NASA’s Space Apps Challenge in NYC where astronaut Cady Coleman got a chance to try it out as well.</p>
+</div><!-- /.prose.trio -->
+
+<div class="prose trio">
+<img src="img/beard.jpg" alt="">
+<h4 class="heading">Beard Detector</h4>
+<p>A device that would detect when someone needed to shave. The hack utilized a USB microscope and an open computer vision library. It was an amusing hack, but one that turned out to be useful as well. A particle physicist who had seen the hack demoed found that it was a genius way to detect cosmic rays in a cloud chamber. This inspiration directly led to the creation of a multi-year student-led research project at Siena College.</p>
+</div><!-- /.prose.trio -->
+
+</div><!-- /.group -->
+
+<small class="credit">Photos by Matt Biddulph, Ariel Waldman, Josh Gourneau</small>
+
+</section>
+
+<section>
+
+<h3>
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_experiences-large.png">
+<img src="img/shd_experiences-small.png" alt="Experiences" srcset="img/shd_experiences-large.png 2x">
+</picture>
+</h3>
+
+<div class="prose">
+
+<blockquote class="blurb">It gets science out of the lab and university offices and makes real problems accessible. Even better than that, the people who do science are accessible too!
+<footer class="credit">— David McKeown, rocket engineer</footer></blockquote>
+
+<blockquote class="blurb">SHD introduced to me for the first time people who worked for NASA. It was a small revelation,
+even as an adult, these heroes of my childhood were just normal people—not magicians, unicorns, or untouchables—who loved geeking out out on space as much as I did. Science Hack Day introduced me to a community scientific professionals who treated me, a non-scientist, as an equal.
+<footer class="credit">– Lindsay Eyink, freelance designer</footer></blockquote>
+
+<blockquote class="blurb">Science belongs
+to everyone... these events show that the whole community can get close to science.
+<footer class="credit">– Vanessa Restrepo Schild, biologist</footer></blockquote>
+
+<blockquote class="blurb">SHD has helped to reshape my way of thinking about how science can be shared.
+<footer class="credit">– Edward Kim, PhD student</footer></blockquote>
+
+<blockquote class="blurb">Science Hack Day is a predecessor to the NASA International Space Apps Challenge, and one of
+its prime inspirations.
+<footer class="credit">– Chris Gerty, Space Apps co-founder at NASA</footer></blockquote>
+
+<blockquote class="blurb">This spa weekend is not on some beach or mineral-bath resort village. It’s Science Hack Day. And my involvement in Science Hack Day events over the past few years has been one of the most fulfilling aspects of my career. It absolutely changed how I looked at my scientific work and how I engage with the general public.
+<footer class="credit">– Matt Bellis, physicist</footer></blockquote>
+
+<blockquote class="blurb">Science Hack Day gave us the opportunity to share new ideas that could be useful to the immediate community and possibly even gain wider reach.
+<footer class="credit"> – Eric Rasolofonirina, technologist</footer></blockquote>
+
+<blockquote class="blurb">I’ve made a lot of friends at Science Hack Day. I’ve learnt a lot about software and hardware hacking that helps me run my lab, too.
+<footer class="credit">– Liam Holt, biochemist</footer></blockquote>
+
+<blockquote class="blurb">I was not expecting to be of much use at a hack day. I have no experience in software development or coding. I loved it. I think what was most remarkable was the way each of us in the group was instrumental in getting to the finished product.
+<footer class="credit">– Marissa Fessenden, illustrator</footer></blockquote>
+
+<br>
+
+</div><!-- /.prose -->
+
+</section>
+
+<section>
+
+<div class="prose">
+
+<h3 class="heading">In The News</h3>
+
+<blockquote class="blurb">Spontaneity and collaboration are the watchwords of the global grassroots movement known as Science Hack Day.
+<footer class="credit">— <a href="http://www.huffingtonpost.com/christopher-king/science-hack-day-serious-_b_5915994.html">Huffington Post</a></footer></blockquote>
+
+<blockquote class="blurb">Sometimes a fresh pair of eyes on a problem can give us an im- portant new perspective on it, but it is not often that scientists veer out of their very specialised fields to see their work through other people’s eyes. But 100 peo- ple, from a mix of different back- grounds, have just descended on San Francisco for Science Hack Day.
+<footer class="credit">— <a href="http://www.bbc.co.uk/programmes/p00bwg89">BBC Science In Action</a></footer></blockquote>
+
+<a class="blurb" href="http://boingboing.net/2014/12/10/the-emergence-of-science-hacki.html"><img src="img/boingboing.jpg" alt="Boing Boing"></a>
+<a class="blurb" href="https://www.youtube.com/watch?v=Dzb_QCYxi3I"><img src="img/kqed.jpg" alt="KQED Science"></a>
+
+<p class="blurb"><a href="http://www.sfweekly.com/sanfrancisco/best-hackathon/BestOf?oid=2962756">SF Weekly</a> named Science Hack Day the “Best Hackathon” in SF</p>
+
+<blockquote class="blurb">Free-form team building and problem solving is what Science Hack Day is about.
+<footer class="credit">- <a href="http://www.wired.com/2012/11/science-hack-day-2012/all/">Wired</a></footer></blockquote>
+
+<br>
+
+<div class="group">
+
+<a class="trio" href="http://www.elcolombiano.com/historico/ariel_ayuda_a_perderle_el_miedo_a_la_ciencia-PXEC_296876"><img src="img/elcolumbiano.jpg" alt="El Columbiano"></a>
+
+<a class="trio" href="http://makezine.com/magazine/make-31/26-hacks-in-48-hours/"><img src="img/make.jpg" alt="La Gazette"></a>
+
+<a class="trio" href="http://www.lagazette-dgi.com/index.php?option=com_content&amp;view=article&amp;id=41820:science-hack-day-une-1ere-en-afrique-pour-valoriser-la-science&amp;catid=45:newsflash&amp;Itemid=110"><img src="img/lagazette.jpg" alt="La Gazette"></a>
+
+</div><!-- /.group -->
+
+</div><!-- /.prose -->
+
+</section>
+
+<section>
+
+<h3 class="bleed">
+<picture>
+<source media="all and (min-width: 32em)" srcset="img/shd_end-large.png">
+<img class="spread" src="img/shd_end-small.png" alt="What You Can Do: Keep the momentum going for the next 50" srcset="img/shd_end-large.png 2x">
+</picture>
+</h3>
+
+<div class="group">
+
+<div class="bleed prose trio">
+<h4>Become a <a href="mailto:ariel@sciencehackday.org?subject=Interested in becoming a global sponsor of Science Hack Day">global sponsor</a> of Science Hack Day.</h4>
+<p>Your sponsorship helps make events in cities across the world possible.</p>
+</div><!-- /.bleed.prose.trio -->
+
+<div class="prose trio">
+<h4>Organize a Science Hack Day in your city!</h4>
+<p>Check out the <a href="http://sciencehackday.org/howto">How-To Guide</a> to get started.</p>
+</div><!-- /.prose.trio -->
+
+<div class="bleed prose trio">
+<h4><a href="mailto:ariel@sciencehackday.org?subject=Interested in supporting the SHD Ambassador Program">Support</a> the Ambassador Program.</p>
+<p>The SHD Ambassador Program supports event organizers in creating events around the world. Our funders make the Ambassador Program possible.</p>
+</div><!-- /.bleed.prose.trio -->
+
+</div><!-- /.group -->
+
+</section>
+
+<footer role="contentinfo" class="h-card bleed prose">
+<small>Email <a href="http://arielwaldman.com/" class="p-name u-url">Ariel Waldman</a> for more information on any of these opportunities: <a href="mailto:ariel@sciencehackday.org" class="u-email">ariel@sciencehackday.org</a></small>
+</footer><!-- /@contentinfo.h-card.bleed.prose -->
+
+</div><!-- /.container -->
+
+</main>
+
+</body>
+</html>
